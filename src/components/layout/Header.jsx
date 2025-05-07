@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -16,7 +15,7 @@ const Header = () => {
   };
 
   const navLinks = [
-    { href: '#productos', label: 'Productos' },
+    { href: '/#productos', label: 'Productos' },
   ];
 
   const totalItemsInCart = cart.reduce((total, item) => total + item.quantity, 0);

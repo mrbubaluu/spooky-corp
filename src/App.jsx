@@ -10,7 +10,7 @@ import HomePage from '@/pages/HomePage';
 const App = () => {
   return (
     <CartProvider>
-      <Router>
+      <Router basename="/spooky-corp">
         <PageLayout>
           <Routes>
             <Route path="/" element={<HomePage />} />
@@ -21,5 +21,6 @@ const App = () => {
     </CartProvider>
   );
 };
+
 
 export default App;
