@@ -44,7 +44,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Poppins', sans-serif;
-    background-image: url('./images/blanco-rep-back.png');
+    background-image: url('./assets/blanco-rep-back.png');
     background-repeat: repeat;
     background-size: 250px; 
     
