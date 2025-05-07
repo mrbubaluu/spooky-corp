@@ -1,0 +1,123 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9% / 90%;
+    --foreground: 0 0% 98%;
+    
+    --card: 240 10% 6.9%; 
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 210 70% 55%; 
+    --primary-foreground: 210 100% 97%; 
+    
+    --secondary: 240 3.7% 15.9% ;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 210 70% 55%; 
+    
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./images/blanco-rep-back.png');
+    background-repeat: repeat;
+    background-size: 250px; 
+    
+    background-attachment: fixed;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsla(var(--background)); 
+    z-index: -1;
+  }
+}
+
+.site-title-font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.section-title-font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800; 
+}
+
+
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px hsla(var(--primary) / 0.2);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, hsl(var(--primary) / 0.6) 100%);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: hsl(var(--primary));
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.category-button {
+  transition: all 0.3s ease;
+}
+
+.category-button:hover {
+  transform: scale(1.05);
+}
+
+.category-button.active {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
