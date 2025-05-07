@@ -199,5 +199,5 @@ export default defineConfig({
 			'@': path.resolve(__dirname, './src'),
 		},
 	},
-	base: 'https://mrbubaluu.github.io/spooky-corp',
+	base: '/spooky-corp/',
 });
