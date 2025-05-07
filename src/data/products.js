@@ -1,4 +1,5 @@
 import React from 'react';
+import hoodieFront from '@/assets/premium_hoodie_front.png';
 
 export const categoriesData = [
   { id: 'todos', name: 'Todos' },
@@ -21,7 +22,7 @@ export const productsData = [
       'Lavable a máquina',
       'Diseño exclusivo de SpookyCorp'
     ],
-    image: 'src/images/premium_hoodie_front.png'
+    image: hoodieFront
   },
   {
     id: 2,
@@ -35,7 +36,7 @@ export const productsData = [
       'Lavable a máquina',
       'Diseño exclusivo de SpookyCorp'
     ],
-    image: 'src/images/premium_hoodie_front.png'
+    image: hoodieFront
   },
   {
     id: 3,
@@ -49,7 +50,7 @@ export const productsData = [
       'Lavable a máquina',
       'Diseño exclusivo de SpookyCorp'
     ],
-    image: 'src/images/premium_hoodie_front.png'
+    image: hoodieFront
   },
   {
     id: 4,
@@ -63,6 +64,6 @@ export const productsData = [
       'Lavable a máquina',
       'Diseño exclusivo de SpookyCorp'
     ],
-    image: 'src/images/premium_hoodie_front.png'
+    image: hoodieFront
   },
 ];
